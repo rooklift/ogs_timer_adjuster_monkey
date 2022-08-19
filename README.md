@@ -17,7 +17,7 @@ This script can be installed in ViolentMonkey or some such similar browser addon
 
 ## Technical notes
 
-How this works: in OGS there is a global object called `sprite_packs` which, among other things, contains timing data for the OGS sound files. Each sound file for the countdowns contains 61 numbers (0 through 60) and the timing data allows OGS to play the right part of the file at the right time.
+In OGS there is a global object called `sprite_packs` which, among other things, contains timing data for the OGS sound files. Each sound file for the countdowns contains 61 numbers (0 through 60) and the timing data allows OGS to play the right part of the file at the right time.
 
 The script works by adjusting the timing data, so that the sound for the 6 second warning plays when there are 8 seconds remaining.
 
