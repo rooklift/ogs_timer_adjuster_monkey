@@ -12,7 +12,7 @@ This script can be installed in ViolentMonkey or some such similar browser addon
 
 ## Note
 
-* I decided to suppress all warnings above 10 seconds (it's troublesome to start the countdown at exactly 10 otherwise). You must choose some setting above 10 seconds in order to start at 10 (for example, 15 seconds in the screenshot above).
+* I decided to suppress all warnings above 10 seconds (it's troublesome to start the countdown at exactly 10 otherwise). You must choose some setting above 10 seconds in order to actually start at 10 (for example, 15 seconds in the screenshot above).
 * You should use the setting which counts *DOWN*.
 
 ## Technical notes
