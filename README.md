@@ -10,8 +10,6 @@ This script can be installed in ViolentMonkey or some such similar browser addon
 
 ![Settings](https://user-images.githubusercontent.com/16438795/185694344-e90a28e2-482c-42bb-94ff-92bb3a4f4507.png)
 
-## Limitations
+## Note
 
-* I decided to suppress all warnings above 10 seconds (it's troublesome to start the countdown at exactly 10 otherwise).
-* Counting up also will not be right.
-
+* I decided to suppress all warnings above 10 seconds (it's troublesome to start the countdown at exactly 10 otherwise). You must choose some setting above 10 seconds in order to start at 10 (for example, 15 seconds in the screenshot above).
