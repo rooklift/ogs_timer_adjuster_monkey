@@ -5,7 +5,7 @@
 // @grant       none
 // @version     1.0
 // @author      Rooklift
-// @description 19/08/2022, 20:00:34
+// @description Adjusts the OGS audio timer by 2 seconds
 // ==/UserScript==
 
 if (!window.ogs_timer_adjuster_monkey) {
