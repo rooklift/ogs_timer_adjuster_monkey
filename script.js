@@ -28,15 +28,18 @@ if (!window.ogs_timer_adjuster_monkey) {
 				if (o[1] !== o["silence"]) {
 
 					console.log(`Adjusting window.sprite_packs["${key}"].definitions`);
-
+					
+					// Suppress all warnings for 13 seconds and higher
 					for (let n = 60; n >= 13; n--) {
 						o[n] = o["silence"];
 					}
-
+					
+					// Adjust warning sounds between 12 and 3 seconds to use the sounds for 10 to 1
 					for (let n = 12; n >= 3; n--) {
 						o[n] = o[n - 2];
 					}
-
+					
+					// Suppress warnings for 2 and 1 seconds
 					for (let n = 2; n >= 1; n--) {
 						o[n] = o["silence"];
 					}
