@@ -23,25 +23,26 @@ if (!window.ogs_timer_adjuster_monkey) {
 					continue;
 				}
 
-				let o = window.sprite_packs[key].definitions;
+				let defs = window.sprite_packs[key].definitions;
+				let silence = defs["silence"];     // Something like [0, 50]
 
-				if (o[1][0] !== o["silence"][0] || o[1][1] !== o["silence"][1]) {
+				if (defs[1][0] !== silence[0] || defs[1][1] !== silence[1]) {
 
 					console.log(`Adjusting window.sprite_packs["${key}"].definitions`);
 					
 					// Suppress all warnings for 13 seconds and higher
 					for (let n = 60; n >= 13; n--) {
-						o[n] = Array.from(o["silence"]);
+						defs[n] = Array.from(silence);
 					}
 					
 					// Adjust warning sounds between 12 and 3 seconds to use the sounds for 10 to 1
 					for (let n = 12; n >= 3; n--) {
-						o[n] = Array.from(o[n - 2]);
+						defs[n] = Array.from(defs[n - 2]);
 					}
 					
 					// Suppress warnings for 2 and 1 seconds
 					for (let n = 2; n >= 1; n--) {
-						o[n] = Array.from(o["silence"]);
+						defs[n] = Array.from(silence);
 					}
 
 				}
