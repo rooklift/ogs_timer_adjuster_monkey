@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://online-go.com/*
 // @grant       none
-// @version     1.0.1
+// @version     1.0.2
 // @author      Rooklift
 // @description Adjusts the OGS audio timer by 2 seconds
 // @downloadURL https://raw.githubusercontent.com/rooklift/ogs_timer_adjuster_monkey/main/script.js
