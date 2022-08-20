@@ -6,6 +6,8 @@
 // @version     1.0.1
 // @author      Rooklift
 // @description Adjusts the OGS audio timer by 2 seconds
+// @downloadURL https://raw.githubusercontent.com/rooklift/ogs_timer_adjuster_monkey/main/script.js
+// @homepageURL https://github.com/rooklift/ogs_timer_adjuster_monkey/
 // ==/UserScript==
 
 if (!window.ogs_timer_adjuster_monkey) {
